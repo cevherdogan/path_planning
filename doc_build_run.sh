@@ -15,3 +15,6 @@ docker run -it cevherdogan/linwin-arvr:alpine-cpp-pathping-v1.0 bash
 # Inspect container logs: Just an example here, would work while the container is running. 
 # In this case, container won't running after it is done.
 docker logs cevherdogan/linwin-arvr:alpine-cpp-pathping-v1.0
+
+
+# gen doxygen documentation

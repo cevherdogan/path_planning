@@ -82,6 +82,18 @@ docker run -it cevherdogan/linwin-arvr:alpine-cpp-pathping-v1.0 bash
 docker logs cevherdogan/linwin-arvr:alpine-cpp-pathping-v1.0
 ```
 
+<a name="notes_on_doxygen"></a>
+#### Notes on doxygen ####
+1. generate doxygen documentation: PDF, LaTEX, RTF
+```
+doxygen Doxyfile
+# The documents are generated under doxydocs directory 
+# navigate through "Related Pages", "Data Structures", "Files" tabs, example below for genetic_algorithm
+open doxydocs/html/files.html
+open doxydocs/html/class_genetic_algorithm.html
+# disabling options or adding extensions are very easy, set GENERATE_LATEX=NO, GENERATE_RTF=NO
+```
+
 <a name="todos"></a>
 #### TODOs ####
 1. Add references
