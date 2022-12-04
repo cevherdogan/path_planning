@@ -1,0 +1,10 @@
+# examples from ref https://docs.docker.com/engine/reference/builder/ 
+*/temp*
+*/*/temp*
+temp?
+*.md
+README-secret1.md
+!README.md
+README-secret2.md
+
+

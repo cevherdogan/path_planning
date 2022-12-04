@@ -65,7 +65,25 @@
 5. To specify your own grid, set n to number of rows, created the 2D vector, setting 1 for obstacles and 0 elsewhere.
 6. The genetic algorithm has an option `shorten_chromosome`, which allows the shortening of the chromosome (path length) based on the length of the path found that reaches the goal. This reduces computation time and pushes the solution towards the shortest path.
 
+<a name="notes_on_containerization"></a>
+#### Notes on containerization ####
+1. Build it in docker image 
+```docker build --build-arg CODE_VERSION=3.17.0_rc1 -t <repo>:<tag> .```
+2. Run it in a container
+```
+docker run -it cevherdogan/linwin-arvr:alpine-cpp-pathping-v1.0
+```
+3. ssh to container
+```
+docker run -it cevherdogan/linwin-arvr:alpine-cpp-pathping-v1.0 bash
+```
+4. Inspect logs in running container 
+```
+docker logs cevherdogan/linwin-arvr:alpine-cpp-pathping-v1.0
+```
+
 <a name="todos"></a>
 #### TODOs ####
 1. Add references
 2. Add algorithm explanations
+3. Build a generic docker image to pull any C++ code from github to build 
